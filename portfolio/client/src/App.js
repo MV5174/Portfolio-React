@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./Components/landing.scss";
 
 class App extends Component {
@@ -7,7 +6,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="landing">
-          
+
           <div class="night">
             <div class="shooting_star"></div>
             <div class="shooting_star"></div>
@@ -36,11 +35,18 @@ class App extends Component {
             <h2>I'm a full-stack developer</h2>
           </div>
 
-          
+
         </div> {/*Ending of landing */}
+
+        
         <div className="about">
-            <h2>About</h2>
-          </div>
+          <h2>Projects</h2>
+        </div>
+
+        <div className="contact">
+          <h2>Contact</h2>
+        </div>
+
         {/*Ending of the app */}</div>
     );
   }

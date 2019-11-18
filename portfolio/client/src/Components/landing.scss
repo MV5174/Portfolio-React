@@ -14,6 +14,12 @@
     height: 100vh;
     background-color: white;
   }
+
+  .contact{
+    height: 100vh;
+    background-color: lightgray;
+    color: black
+  }
   
   .App-header {
     position: absolute;
@@ -72,7 +78,7 @@
       &:nth-child(#{$i}) {
         $delay: random(9999) + 0ms;
         top: calc(90% - #{random(1200) - 200px});
-        left: calc(90% - #{random(1600) + 0px});
+        left: calc(90% - #{random(1600) + 200px});
         animation-delay: $delay;
         // opacity: random(50) / 100 + 0.5;
         
