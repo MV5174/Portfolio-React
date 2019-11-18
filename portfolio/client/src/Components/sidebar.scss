@@ -1,0 +1,94 @@
+.socialMedia {
+    position: fixed;
+    top: 30%;
+    left: 0%;
+  }
+
+  .facebook img {
+      height: 70px;
+      width: 120px;
+  }
+
+  .facebook p {
+      margin-top: 10px;
+      text-align: center;
+      color: white;
+  }
+
+  .facebook:hover p {
+    color: #4a6ea9;
+  }
+
+  .instagram img {
+      padding-left: 20%;
+    height: 50px;
+    width: 85px;
+}
+
+.instagram p {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+  
+  .instagram:hover p {
+    color: hotpink;
+  }
+
+
+  .facebook {
+    padding: .5em;
+    border: 1px solid #ccc;
+    display: block;
+    margin: -1px 0 0 -1px;
+    color: black;
+    background: linear-gradient( to left,
+         #333 50%, #333, #4a6ea9, #4a6ea9 50%
+    );
+    background-size: 202% 100%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+  }
+
+  .instagram {
+    padding: 1em;
+    border: 1px solid #ccc;
+    display: block;
+    margin: -1px 0 0 -1px;
+    color: black;
+    background: linear-gradient( to left,
+         #333 50%, #333, hotpink, hotpink 50%
+    );
+    background-size: 202% 100%;
+    transition: all 0.2s ease;
+    animation: down-bump 0.4s ease;
+  }
+
+  .sm h2 {
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    line-height: 1.2;
+  }
+  .sm h3 {
+    font: 0.8em "Lucida Grande", serif;
+  }
+  
+  .sm:hover {
+    background-position: 100% 50%;
+    animation: left-bump 0.4s ease;
+  }
+  
+  .sm:hover p span {
+    color: white;
+  }
+  
+  @keyframes left-bump {
+    0% { padding-left: 2em; }
+    50% { padding-left: 1.5em; }
+    100% { padding-left: 2em; }
+  }
+  @keyframes down-bump {
+    0% { padding-left: 2em; }
+    50% { padding-left: 2.5em; }
+    100% { padding-left: 2em; }
+  }
