@@ -1,25 +1,49 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Nav from "./Components/Nav/nav";
-import Footer from "./Components/Footer/footer";
-import About from "./Components/About/about";
-import NoMatch from "./Components/NoMatch/noMatch"
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./Components/landing.scss";
 
-function App() {
-  return (
-    <Router>
+class App extends Component {
+  render() {
+    return (
       <div className="App">
-        <Nav />
-        <Switch>
-          <Route exact path = "/" component={About} />
-          {/* <Route exact path = "/portfolio" component={Portfolio} /> */}
-          {/* <Route exact path = "/contact" component={Contact} /> */}
-          <Route path ="*" component={NoMatch} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
-  );
+        <div className="landing">
+          
+          <div class="night">
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+            <div class="shooting_star"></div>
+          </div>
+
+          <div className="App-header">
+            <h2>Hi, I'm </h2><h2 className="myName">Michael Vega</h2>
+            <h2>I'm a full-stack developer</h2>
+          </div>
+
+          
+        </div> {/*Ending of landing */}
+        <div className="about">
+            <h2>About</h2>
+          </div>
+        {/*Ending of the app */}</div>
+    );
+  }
 }
 
 export default App;
