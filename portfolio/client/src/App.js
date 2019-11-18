@@ -1,68 +1,42 @@
 import React, { Component } from "react";
-import "./Components/landing.scss";
-import "./Components/sidebar.scss";
+import "./Components/about.scss";
 import "./Components/projects.scss";
 import "./Components/contact.scss";
+import AwesomeSlider from 'react-awesome-slider';
+import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
+import "./Components/carousel.scss";
+import Landing from "./Components/Landing/landing";
+import Sidebar from "./Components/Sidebar/sidebar";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <div className="socialMedia">
-          <div className="facebook sm">
-          <img src="http://icons.iconarchive.com/icons/danleech/simple/256/facebook-icon.png" />
-            <p><strong>Facebook</strong></p>
-          </div>
-          <div className="instagram sm">
-            <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-512.png" />
-            <p>Instagram</p>
-          </div>
-        </div> */}
-        <div className="landing">
+        {/* <Sidebar /> */}
 
-          <div class="night">
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-            <div class="shooting_star"></div>
-          </div>
+        <Landing />
 
-          <div className="App-header">
-            <h2>Hi, I'm </h2><h2 className="myName">Michael Vega</h2>
-            <h2>I'm a full-stack developer</h2>
-          </div>
+        <div className="carousel" id="carousel">
 
-          <a href="#projects" className="arrowTag"><img className="arrow" src="https://image.flaticon.com/icons/svg/37/37472.svg" /> </a>
+          <AwesomeSlider cssModule={AwesomeSliderStyles}>
 
+            <div className="about slide">
+              <h2 className="header">About Me</h2>
+            </div>
 
-        </div> {/*Ending of landing */}
+            <div className="projects slide">
+              <h2 className="header">Projects</h2>
+            </div>
 
+            <div className="contact slide">
+              <h2 className="header">Contact</h2>
+            </div>
+
+          </AwesomeSlider>
+
+        </div> {/*Ending of the carousel */}
         
-        <div className="projects" id="projects">
-          <h2>Projects</h2>
-        </div>
-
-        <div className="contact">
-          <h2>Contact</h2>
-        </div>
-
-        {/*Ending of the app */}</div>
+      {/*Ending of the app */}</div>
     );
   }
 }
