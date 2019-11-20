@@ -11,7 +11,7 @@ import Sidebar from "./Components/Sidebar/sidebar";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="app">
         {/* <Sidebar /> */}
 
         <Landing />

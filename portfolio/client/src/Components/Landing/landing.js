@@ -8,7 +8,7 @@ class Landing extends Component {
             <div className="landing">
                 <Night />
                 
-                <div className="App-header">
+                <div className="app-header">
                     <h2>Hi, I'm </h2><h2 className="myName">Michael Vega</h2>
                     <h2>I'm a full-stack developer</h2>
                 </div>
