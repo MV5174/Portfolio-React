@@ -1,0 +1,219 @@
+//default values
+$defaultDuration: .3s;
+$primaryColour: #ececec;
+$secondaryColour: #666;
+$shadowColour: rgba(0, 0, 0, .6);
+
+// As is often the case, some devices/browsers need additional code to get CSS to work
+// in the most desired way. These mixins are used to quickly drop in hacks for each element
+@mixin hideTapHighlightColor() {
+	//Prevent highlight colour when element is tapped
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@mixin hardwareAccel() {
+	//Improve performance on mobile/tablet devices
+	transform: translateZ(0);
+}
+
+@mixin improveAntiAlias() {
+	//Improve aliasing on mobile/tablet devices
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.bounty {
+    position: absolute;
+    background-image: url("../Images/pr3Cap.PNG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 12.5%;
+    height: 35%;
+    width: 25%;
+}
+
+.kodex {
+    position: absolute;
+    background-image: url("https://wallpaperplay.com/walls/full/5/a/8/156627.jpg#.XYmzy6eZHPc.link");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 37.5%;
+    height: 35%;
+    width: 25%;
+}
+
+.ez {
+    position: absolute;
+    background-image: url("../Images/ez.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 20%;
+    left: 62.5%;
+    height: 35%;
+    width: 25%;
+}
+
+.friend {
+    position: absolute;
+    background-image: url("https://media.istockphoto.com/videos/point-of-view-shot-of-young-people-multiethnic-group-taking-selfie-video-id998913020?s=640x640");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 55%;
+    left: 12.5%;
+    height: 35%;
+    width: 25%;
+}
+
+.train {
+    position: absolute;
+    background-image: url("https://aeronauticpictures.com/buy/wp-content/uploads/2016/12/train-stock-footage_passenger-train-arriving_0011_4k_hd_a-632x355.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 55%;
+    left: 37.5%;
+    height: 35%;
+    width: 25%;
+}
+
+.bamazon {
+    position: absolute;
+    background-image: url("https://yt3.ggpht.com/a/AGF-l7-truNwbNCDbm-8qaZBC0DtOjjrOBGTQIOGEw=s900-c-k-c0xffffffff-no-rj-mo");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 55%;
+    left: 62.5%;
+    height: 35%;
+    width: 25%;
+}
+
+.float-shadow {
+	display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+	&:before {
+		pointer-events: none;
+	  position: absolute;
+	  z-index: -1;
+	  content: '';
+	  top: 100%;
+	  left: 5%;
+	  height: 10px;
+	  width: 90%;
+	  opacity: 0;
+	  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.781) 0%,rgba(255, 255, 255, 0) 80%); /* W3C */
+		transition-duration: $defaultDuration;
+		transition-property: transform opacity;
+	}
+
+	&:hover {
+		transform: translateY(-20px); /* move the element up by 5px */
+
+		&:before {
+			opacity: 1;
+			transform: translateY(10px); /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+		}
+	}
+}
+
+/* Hover Shadow */
+@keyframes hover {
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(-20px);
+	}
+}
+
+@keyframes hover-shadow {
+	0% {
+		transform: translateY(20px);
+		opacity: .4;
+	}
+
+	50% {
+		transform: translateY(10px);
+		opacity: 1;
+	}
+
+
+	100% {
+		transform: translateY(20px);
+		opacity: .4;
+	}
+}
+
+.hover-shadow {
+	display: inline-block;
+	transition-duration: $defaultDuration;
+	transition-property: transform;
+
+	@include hideTapHighlightColor();
+	@include hardwareAccel();
+	@include improveAntiAlias();
+
+	&:before {
+		pointer-events: none;
+	  position: absolute;
+	  z-index: -1;
+	  content: '';
+	  top: 100%;
+	  left: 5%;
+	  height: 10px;
+	  width: 90%;
+	  opacity: 0;
+	  background: radial-gradient(ellipse at center, rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 80%); /* W3C */
+		transition-duration: $defaultDuration;
+		transition-property: transform opacity;
+	}
+
+	&:hover {
+		transform: translateY(-20px);
+		animation-name: hover;
+		animation-duration: 2s;
+		animation-delay: $defaultDuration;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+
+		&:before {
+			opacity: .4;
+			transform: translateY(20px);
+			animation-name: hover-shadow;
+			animation-duration: 2s;
+			animation-delay: .3s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+	}
+}
+
+.pop {
+    position: absolute;
+    background-position: $secondaryColour;
+    top: 40%;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+}
+
+.pr:hover {
+    .pop {
+        background-color: rgb(15,19,27);
+        opacity: .8;
+    }
+}
