@@ -1,25 +1,28 @@
 .myPic {
     position: absolute;
-    top: 10%;
-    left: 20%;
+    top: 10vh;
+    left: 19vw;
     background: chartreuse;
-    height: 80%;
-    width: 30%
+    height: 80vh;
+    width: 30vw;
+    overflow: hidden;
 }
 
 .summary {
     position: absolute;
-    top: 10%;
-    right: 20%;
-    height: 40%;
-    width: 30%
+    top: 10vh;
+    left: 50vw;
+    height: 40vh;
+    width: 30vw;
+    overflow: hidden;
 }
 
 .techSkills {
     position: absolute;
-    top: 50%;
-    right: 20%;
-    height: 40%;
-    width: 30%
+    top: 50vh;
+    left: 50vw;
+    height: 40vh;
+    width: 30vw;
+    overflow: hidden;
 }
 

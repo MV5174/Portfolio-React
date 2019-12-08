@@ -25,7 +25,7 @@ class App extends Component {
               <h2 className="header">About Me</h2>
               <div className="myPic"></div>
               <div className="summary">
-                <p>Full Stack Web Developer with experience in C. Educated at Valencia College and University of Central Florida Continuing Ed with skills in HTML, CSS and JavaScript. Strengths in problem solving, working with others, and learning quickly. An ardent fan of learning new topics to further my skills, working with others to make designs that are unique and creative, and putting in extra work into the projects I love. Have extensive experience in connecting with new people and working with others from my background as a publix worker. Excited to leverage my skills and background to further my knowledge and work on a project I am passionate about.</p>
+                <p>Full Stack Web Developer with experience in C. Educated at Valencia College and University of Central Florida Continuing Ed with skills in HTML, CSS and JavaScript. I'm an ardent fan of learning new topics to further my skills, working with others to make designs that are unique and creative, and putting in extra work into the projects I love. I'm excited to leverage my skills and background to further my knowledge and work on a project I am passionate about.</p>
               </div>
               <div className="techSkills">
                 <h2><strong>Technical Skills:</strong></h2>

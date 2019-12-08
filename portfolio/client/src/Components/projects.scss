@@ -27,10 +27,10 @@ $shadowColour: rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 20%;
-    left: 12.5%;
-    height: 35%;
-    width: 25%;
+    top: 15vh;
+    left: 12.5vw;
+    height: 35vh;
+    width: 25vw;
 }
 
 .kodex {
@@ -39,10 +39,10 @@ $shadowColour: rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 20%;
-    left: 37.5%;
-    height: 35%;
-    width: 25%;
+    top: 15vh;
+    left: 37.5vw;
+    height: 35vh;
+    width: 25vw;
 }
 
 .ez {
@@ -51,10 +51,10 @@ $shadowColour: rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 20%;
-    left: 62.5%;
-    height: 35%;
-    width: 25%;
+    top: 15vh;
+    left: 62.5vw;
+    height: 35vh;
+    width: 25vw;
 }
 
 .friend {
@@ -63,10 +63,10 @@ $shadowColour: rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 55%;
-    left: 12.5%;
-    height: 35%;
-    width: 25%;
+    top: 50vh;
+    left: 12.5vw;
+    height: 35vh;
+    width: 25vw;
 }
 
 .train {
@@ -75,10 +75,10 @@ $shadowColour: rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 55%;
-    left: 37.5%;
-    height: 35%;
-    width: 25%;
+    top: 50vh;
+    left: 37.5vw;
+    height: 35vh;
+    width: 25vw;
 }
 
 .bamazon {
@@ -87,10 +87,10 @@ $shadowColour: rgba(0, 0, 0, .6);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    top: 55%;
-    left: 62.5%;
-    height: 35%;
-    width: 25%;
+    top: 50vh;
+    left: 62.5vw;
+    height: 35vh;
+    width: 25vw;
 }
 
 .float-shadow {
@@ -107,7 +107,6 @@ $shadowColour: rgba(0, 0, 0, .6);
 	  position: absolute;
 	  z-index: -1;
 	  content: '';
-	  top: 100%;
 	  left: 5%;
 	  height: 10px;
 	  width: 90%;
@@ -157,7 +156,6 @@ $shadowColour: rgba(0, 0, 0, .6);
 }
 
 .hover-shadow {
-	display: inline-block;
 	transition-duration: $defaultDuration;
 	transition-property: transform;
 
