@@ -19,7 +19,7 @@ class App extends Component {
 
         <div className="carousel" id="carousel">
 
-          <AwesomeSlider cssModule={AwesomeSliderStyles}>
+          {/* <AwesomeSlider cssModule={AwesomeSliderStyles}>
 
             <div className="about slide">
               <h2 className="header">About Me</h2>
@@ -109,9 +109,9 @@ class App extends Component {
               </div>
             </div>
 
-          </AwesomeSlider>
+    </AwesomeSlider> */}
 
-        </div> {/*Ending of the carousel */}
+        </div> {/* Ending of the carousel */}
 
         {/*Ending of the app */}</div>
     );
