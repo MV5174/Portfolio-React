@@ -18,8 +18,9 @@ class App extends Component {
         <Landing />
 
         <div className="carousel" id="carousel">
+          
 
-          {/* <AwesomeSlider cssModule={AwesomeSliderStyles}>
+          {/* <AwesomeSlider cssModule={AwesomeSliderStyles}> */}
 
             <div className="about slide">
               <h2 className="header">About Me</h2>
@@ -41,8 +42,9 @@ class App extends Component {
                 </ul>
               </div>
             </div>
-
-            <div className="projects slide">
+</div> {/* Ending of the carousel */}
+            <div className="botSlide projects">
+              <div className="slide">
               <h2 className="header">Projects</h2>
               <div className="bounty hover-shadow pr">
                 <a href="https://github.com/MV5174/Project3" target="blank">
@@ -92,9 +94,10 @@ class App extends Component {
                   </div>
                 </a>
               </div>
+              </div>
             </div>
 
-            <div className="contact slide">
+            <div className="botSlide contact slide">
               <h2 className="header">Contact</h2>
               <div className="info">
                 <h4>Email: MVega7971@gmail.com </h4>
@@ -109,9 +112,9 @@ class App extends Component {
               </div>
             </div>
 
-    </AwesomeSlider> */}
+    {/*</AwesomeSlider> */}
 
-        </div> {/* Ending of the carousel */}
+        
 
         {/*Ending of the app */}</div>
     );
