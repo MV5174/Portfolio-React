@@ -6,10 +6,14 @@
 .myPic {
     position: absolute;
     top: 10vh;
-    left: 19vw;
-    background: chartreuse;
-    height: 80vh;
-    width: 30vw;
+    left: 13vw;
+    background-image: url("../Images/myPic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    height: 70vh;
+    width: 35vw;
     overflow: hidden;
 }
 
