@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import "./Components/about.scss";
 import "./Components/projects.scss";
 import "./Components/contact.scss";
-import AwesomeSlider from 'react-awesome-slider';
-import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
 import "./Components/carousel.scss";
 import Landing from "./Components/Landing/landing";
 import pic from "./Images/pr3Cap.PNG"
@@ -18,9 +16,6 @@ class App extends Component {
         <Landing />
 
         <div className="carousel" id="carousel">
-          
-
-          {/* <AwesomeSlider cssModule={AwesomeSliderStyles}> */}
 
             <div className="about slide">
               <h2 className="header">About Me</h2>
@@ -111,10 +106,6 @@ class App extends Component {
                 <h4>LinkedIn: <a href="https://www.linkedin.com/in/michael-vega-45200b187/" target="blank">https://www.linkedin.com/in/michael-vega-45200b187/</a></h4>
               </div>
             </div>
-
-    {/*</AwesomeSlider> */}
-
-        
 
         {/*Ending of the app */}</div>
     );
